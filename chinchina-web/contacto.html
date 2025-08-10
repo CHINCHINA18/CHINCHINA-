@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | CHINCHINA INGENIERÍA & CONSTRUCCIÓN</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/logo-chinchina.png" alt="Logo CHINCHINA" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Contáctanos</h1>
+    <p>¿Tienes un proyecto en mente? ¿Necesitas una cotización? Escríbenos y te responderemos a la brevedad.</p>
+
+    <form name="contacto" method="POST" data-netlify="true">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+
+    <div style="margin-top:40px;">
+      <h2>Información de contacto</h2>
+      <p><strong>Correo:</strong> contacto@chinchina.com.pe</p>
+      <p><strong>Teléfono:</strong> +51 987 654 321</p>
+      <p><strong>Dirección:</strong> Jr. Ingeniería 123, Juliaca, Puno</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CHINCHINA INGENIERÍA & CONSTRUCCIÓN E.I.R.L. | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
