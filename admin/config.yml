@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "paginas"
+    label: "Páginas"
+    files:
+      - label: "Inicio"
+        name: "inicio"
+        file: "index.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "text" }
+
+      - label: "Servicios"
+        name: "servicios"
+        file: "servicios.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+
+      - label: "Nosotros"
+        name: "nosotros"
+        file: "nosotros.html"
+        fields:
+          - { label: "Misión", name: "mision", widget: "text" }
+          - { label: "Visión", name: "vision", widget: "text" }
+
+      - label: "Proyectos"
+        name: "proyectos"
+        file: "proyectos.html"
+        fields:
+          - { label: "Listado de proyectos", name: "body", widget: "markdown" }
+
+      - label: "Contacto"
+        name: "contacto"
+        file: "contacto.html"
+        fields:
+          - { label: "Formulario", name: "form", widget: "markdown" }
